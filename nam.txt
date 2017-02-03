@@ -1,0 +1,33 @@
+V: Es el inicio del archivo y la bandera -v indica que se usa
+la versión 1.0a5 de NAM.
+
+n: Define cada uno de los nodos que existirán, los atributos para 
+definir el nodo son: -t el tiempo en el que existe, -a dirección 
+(por ejemplo dir IP), -s el id, -S el estado del nodo (UP o Down),
+-v la forma del nodo (circle, box, hexagon), -c el color, -i color
+secundario.
+
+l: Define el enlace que conecta a los nodos, los atributos son: 
+-t el tiempo en el que existe, -s el nodo origen, -d el nodo 
+destino, -S el estado (UP o Down), -c el color, -o la orientación
+del enlace (x deg para orientación en grados), -r para ancho de 
+banda, -D para delay o retraso
+
+q: Define las colas asociadas a los nodos, los atributos son: -s 
+el nodo origen, -d el nodo destino, -a la orientacion del dibujo
+de la cola en el animador (0.5 son 90 grados, es decir, se va a 
+mostrar una cola vertical hacia arriba)
+
+Los paquetes tienen asociados diferentes acciones en NAM:
+
+h: Cuando el paquete inicia un salto desde un nodo origen.
+r: Cuando el paquete llega al nodo destino.
++: Cuando el paquete entra a una cola.
+-: Cuando el paquete sale de una cola.
+
+Los atributos de los paquetes son: -t es el tiempo en el que 
+ocurre el evento, -s el nodo origen, -d el nodo destino, -e es el 
+tamaño en bytes del paquete, -i (opcional) es el id del paquete, 
+-P (opcional) es el tipo del paquete (TCP, ACK, NACK, SRM, etc.).
+
+Info> http://www.isi.edu/nsnam/nam/

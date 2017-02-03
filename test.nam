@@ -1,0 +1,18 @@
+V -t * -v 1.0a5 -a 0
+n -t * -a 0 -s 0 -S UP -v circle -c black -i black
+n -t * -a 1 -s 1 -S UP -v box -c tan -i tan
+n -t * -a 2 -s 2 -S UP -v circle -c black -i black
+l -t * -s 0 -d 1 -S UP -r 200000 -D 0.1000 -c black -o 0deg
+l -t * -s 1 -d 2 -S UP -r 200000 -D 0.1000 -c black -o 0deg
+q -t * -s 1 -d 0 -a 0.5
+q -t * -s 0 -d 1 -a 0.5
+q -t * -s 1 -d 2 -a 0.5
+q -t * -s 2 -d 1 -a 0.5
++ -t 0.000800 -e 1000 -s 0 -d 1 -c 1 -i 1
+- -t 0.000800 -e 1000 -s 0 -d 1 -c 1 -i 1
+h -t 0.000800 -e 1000 -s 0 -d 1 -c 1 -i 1
+r -t 0.140800 -e 1000 -s 0 -d 1 -c 1 -i 1
++ -t 0.140800 -e 1000 -s 1 -d 2 -c 1 -i 1
+- -t 0.140800 -e 1000 -s 1 -d 2 -c 1 -i 1
+h -t 0.140800 -e 1000 -s 1 -d 2 -c 1 -i 1
+r -t 0.280800 -e 1000 -s 1 -d 2 -c 1 -i 1
